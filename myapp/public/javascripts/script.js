@@ -11,7 +11,8 @@ $(".addOrigGlazed").click(function() { addQuantity("origGlazed") });
 $(".addChocSprnk").click(function() { addQuantity("chocSprnk") });
 $(".addCookie").click(function() { addQuantity("cookieKreme") });
 $(".addChocIced").click(function() { addQuantity("chocIced") });
-$(".addKreme").click(function() { addQuantity("kreme") });
+$(".addKreme").click(function() { window.location="#spectator"; });
+$(".spectator").click(function() { addQuantity("kreme") });
 //Add to Basket
 $(".basketOrigGlazed").click(function() { addToBasket("origGlazed") });
 $(".basketChocSprnk").click(function() { addToBasket("chocSprnk") });

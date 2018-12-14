@@ -19,17 +19,21 @@
 
 	<div role="main" class="ui-content">
 		<div role="center" class="ui-content" style="text-align: center">
-			<img src="images/kreme.png" id="logo">
+			<img src="images/kreme.png" id="logo" style="width: 150px;">
 		</div>
     <div role="form-container" class="ui-content" style="width: 90%; max-width: 30em; margin-left: auto; margin-right: auto">
       Username:<input type="text" name="username" id="username" required></input>
   	  Password:<input type="password" name="password" id="password" required></input>
   	  <input id="submit" type="submit" value="Submit"><br>
+      <hr style="margin-top: -20px;">
+      <p style="text-align: center;">or</p>
+      <hr>
+      <div id="row" class="spectator" style="text-align: center; cursor: pointer">Continue as spectator</div>
 		</div>
 	</div>
 
 	<div id="footer" data-role="header">
-		<p id="footerText" style="font-size: 12px; line-height: 0">by Jack Mallon</p>
+		<p id="footerText" style="font-size: 12px; line-height: 0"></p>
 	</div>
 </div>
 
@@ -41,7 +45,7 @@
 
 	<div role="main" class="ui-content">
 		<div role="center" class="ui-content" style="text-align: center">
-			<img src="images/kreme.png" id="logo">
+			<img src="images/kreme.png" style="width: 150px;" id="logo">
 		</div>
     <div id="statContainer">
       <p style="text-align: center;"><strong>Orders:</strong></p>
@@ -59,7 +63,7 @@
 	</div>
 
   <div style="background-color: #00754F; color: white; padding: 2px; padding-top: 23px; padding-bottom: -20px;" data-role="header">
-		<p id="footerText" style="font-size: 12px; line-height: 0; float: left">by Jack Mallon</p>
+		<p id="footerText" style="font-size: 12px; line-height: 0; float: left"></p>
     <p style="font-size: 12px; line-height: 0; float: right"><a href="#login" style="text-decoration: none; underline: none; color: white;">Log Out</a></p>
     <span class="clear" style="clear: right; display: block;"></span>
 	</div>
@@ -73,7 +77,7 @@
 
 	<div role="main" class="ui-content">
 		<div role="center" class="ui-content" style="text-align: center">
-			<img src="images/kreme.png" id="logo">
+			<img src="images/kreme.png" style="width: 150px;" id="logo">
 		</div>
 
     <p style="text-align: center;"><strong>Add to Shopping Basket:</strong></p>
@@ -110,7 +114,7 @@
 	</div>
 
   <div style="background-color: #00754F; color: white; padding: 2px; padding-top: 23px; padding-bottom: -20px;" data-role="header">
-		<p id="footerText" style="font-size: 12px; line-height: 0; float: left">by Jack Mallon</p>
+		<p id="footerText" style="font-size: 12px; line-height: 0; float: left"></p>
     <p style="font-size: 12px; line-height: 0; float: right"><a href="#login" style="text-decoration: none; underline: none; color: white;">Log Out</a></p>
     <span class="clear" style="clear: right; display: block;"></span>
 	</div>
@@ -124,7 +128,7 @@
 
 	<div role="main" class="ui-content">
 		<div role="center" class="ui-content" style="text-align: center">
-			<img src="images/kreme.png" id="logo">
+			<img src="images/kreme.png" style="width: 150px;" id="logo">
 		</div>
     <div id="checkoutContainer">
       <strong>Basket:</strong>
@@ -135,61 +139,51 @@
 	</div>
 
   <div style="background-color: #00754F; color: white; padding: 2px; padding-top: 23px; padding-bottom: -20px;" data-role="header">
-		<p id="footerText" style="font-size: 12px; line-height: 0; float: left">by Jack Mallon</p>
+		<p id="footerText" style="font-size: 12px; line-height: 0; float: left"></p>
     <p style="font-size: 12px; line-height: 0; float: right"><a href="#login" style="text-decoration: none; underline: none; color: white;">Log Out</a></p>
     <span class="clear" style="clear: right; display: block;"></span>
 	</div>
 </div>
 
+<!-- #Spectator -->
+<div data-role="page" id="spectator" data-theme="a">
+	<div id="header" data-role="header">
+		<h1>Available Matches</h1>
+	</div>
+
+	<div role="main" class="ui-content">
+		<div role="center" class="ui-content" style="text-align: center">
+			<img src="images/kreme.png" style="width: 150px;" id="logo">
+		</div>
+    <div id="checkoutContainer">
+      <strong>Basket:</strong>
+    </div>
+    <div id="checkoutContainer">
+      <div id="confirmBasket" class="confirmBasket" style="background-color: #D40027; height: 40px; cursor: pointer; text-align: center;"><p id="statLabel" style="text-align: center;">Confirm Order</p></div>
+    </div>
+	</div>
+
+  <div style="background-color: #00754F; color: white; padding: 2px; padding-top: 23px; padding-bottom: -20px;" data-role="header">
+		<p id="footerText" style="font-size: 12px; line-height: 0; float: left"></p>
+    <p style="font-size: 12px; line-height: 0; float: right"><a href="#login" style="text-decoration: none; underline: none; color: white;">Log Out</a></p>
+    <span class="clear" style="clear: right; display: block;"></span>
+	</div>
+</div>
+
+
 <!-- #cook -->
 <div data-role="page" id="cook" data-theme="a">
 	<div id="header" data-role="header">
-		<h1>Cook</h1>
+		<h1>Referee</h1>
 	</div>
 
   <div role="main" class="ui-content">
 		<div role="center" class="ui-content" style="text-align: center">
-			<img src="images/kreme.png" id="logo">
+			<img src="images/kreme.png" style="width: 150px;" id="logo">
 		</div>
-    <div id="statContainer">
-      <p style="text-align: center;"><strong>Donuts:</strong></p>
-      <div id="row"><p id="statLabel">Total:</p><div id="statCont"><p id="totalDonutsCook">0</p></div><span id="clear"></span></div>
-      <div id="row"><p id="statLabel">Original Glazed:</p><div id="statCont"><p id="orgDonutCook">0</p></div><span id="clear"></span></div>
-      <div id="row"><p id="statLabel">Chocolate Iced Glazed with Sprinkles:</p><div id="statCont"><p id="chocSprnkDonutCook">0</p></div><span id="clear"></span></div>
-      <div id="row"><p id="statLabel">Oreo Cookies and Kreme:</p><div id="statCont"><p id="oreoDonutCook">0</p></div><span id="clear"></span></div>
-      <div id="row"><p id="statLabel">Chocolate Iced Glazed:</p><div id="statCont"><p id="chocDonutCook">0</p></div><span id="clear"></span></div>
-      <div id="row"><p id="statLabel">Glazed with Kreme Filling:</p><div id="statCont"><p id="krmDonutCook">0</p></div><span id="clear"></span></div>
-    </div>
-	</div>
-
-  <p style="text-align: center;"><strong>Add Donuts:</strong></p>
-  <div class="container" id="donutAddContainer">
-    <div class="row" id="bootRow">
-      <div class="col-md-4 col-sm-6 col-6 col-md-offset-1" id="donutCol">
-        <img src="images/orig.jpg" id="donut">
-        <div id="row" class="addOrigGlazed">Add the Original Glazed</div>
-      </div>
-      <div class="col-md-4 col-sm-6 col-6" id="donutCol">
-        <img src="images/sprnk.png" id="donut">
-        <div id="row" class="addChocSprnk">Add Chocolate Sprinkles</div>
-      </div>
-      <div class="col-md-4 col-sm-6 col-6" id="donutCol">
-        <img src="images/cookies.jpg" id="donut">
-        <div id="row" class="addCookie">Add Cookies and Kreme</div>
-      </div>
-      <div class="col-md-6 col-sm-6 col-6" id="donutCol">
-        <img src="images/chocg.jpg" id="donut">
-        <div id="row" class="addChocIced">Add Choc Iced Glazed</div>
-      </div>
-      <div class="col-md-6 col-sm-6 col-6" id="donutCol">
-        <img src="images/kreme.jpg" id="donut">
-        <div id="row" class="addKreme">Add Glazed Kreme Filling</div>
-      </div>
-    </div>
-  </div><br>
 
 	<div style="background-color: #00754F; color: white; padding: 2px; padding-top: 23px; padding-bottom: -20px;" data-role="header">
-		<p id="footerText" style="font-size: 12px; line-height: 0; float: left">by Jack Mallon</p>
+		<p id="footerText" style="font-size: 12px; line-height: 0; float: left"></p>
     <p style="font-size: 12px; line-height: 0; float: right"><a href="#login" style="text-decoration: none; underline: none; color: white;">Log Out</a></p>
     <span class="clear" style="clear: right; display: block;"></span>
 	</div>

@@ -25,12 +25,14 @@ var connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: '',
-  database: 'sys'
+  database: 'sports_app'
 });
 
-connection.connect(function(error) {});
+connection.connect(function(error) {
+  console.log("WORKING!");
+});
 
-
+/*
 //Login post method
 app.post('/login',function(req,res){
   var username = req.body.username;
@@ -194,7 +196,7 @@ app.post('/initializeCookies',function(req,res){
   req.session.basket = "";
   req.session.totalOfBasket = 0.00;
   res.end("Done");
-});
+});*/
 
 
 app.use('/', indexRouter);
