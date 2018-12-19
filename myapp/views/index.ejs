@@ -11,6 +11,22 @@
   crossorigin="anonymous"></script>
 <body>
 
+
+<style>
+  #circle-button{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #00754F;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    border: 1px solid white;
+    z-index: 5;
+  }
+</style>
+
+
 <!-- #home -->
 <div data-role="page" id="login" data-theme="a">
 	<div id="header" data-role="header">
@@ -21,7 +37,9 @@
 		<div role="center" class="ui-content" style="text-align: center">
 			<img src="images/kreme.png" id="logo" style="width: 150px;">
 		</div>
+
     <div role="form-container" class="ui-content" style="width: 90%; max-width: 30em; margin-left: auto; margin-right: auto">
+    <div id="row" class="wrong-creds" style="text-align: center; background-color: red;">Wrong username or password</div><br>
       Username:<input type="text" name="username" id="username" required></input>
   	  Password:<input type="password" name="password" id="password" required></input>
   	  <input id="submit" type="submit" value="Submit"><br>
@@ -45,14 +63,15 @@
 
 	<div role="main" class="ui-content">
 		<div role="center" class="ui-content" style="text-align: center">
-			<img src="images/kreme.png" style="width: 150px;" id="logo">
+			<img src="images/kreme.png" style="width: 150px; margin-bottom: 700px;" id="logo">
 		</div>
-
-
-
 	</div>
 
-  <div style="background-color: #00754F; color: white; padding: 2px; padding-top: 23px; padding-bottom: -20px;" data-role="header">
+  <a href="#login"><div id="circle-button">
+    <img src="images/add.png" id="logo" style="margin: 13px; width: 20px;">
+  </div></a>
+
+  <div style="background-color: #00754F; color: white; padding: 2px; padding-top: 23px; padding-bottom: 0px;" data-role="header">
 		<p id="footerText" style="font-size: 12px; line-height: 0; float: left"></p>
     <p style="font-size: 12px; line-height: 0; float: right"><a href="#login" style="text-decoration: none; underline: none; color: white;">Log Out</a></p>
     <span class="clear" style="clear: right; display: block;"></span>
@@ -90,6 +109,8 @@
 		</div>
 	</div>
 
+
+
   <div style="background-color: #00754F; color: white; padding: 2px; padding-top: 23px; padding-bottom: -20px;" data-role="header">
 		<p id="footerText" style="font-size: 12px; line-height: 0; float: left"></p>
     <p style="font-size: 12px; line-height: 0; float: right"><a href="#login" style="text-decoration: none; underline: none; color: white;">Log Out</a></p>
@@ -108,6 +129,22 @@
 			<img src="images/kreme.png" style="width: 150px;" id="logo">
 		</div>
 	</div>
+
+  <div role="form-container" class="ui-content" style="width: 90%; max-width: 30em; margin-left: auto; margin-right: auto">
+    <div id="row" style="text-align: center;">Add a new user</div><br>
+    Username:<input type="text" name="username" id="addNewUsername" required></input>
+    Password:<input type="password" name="password" id="addNewPassword" required></input>
+    Role:
+    <select name="cars">
+      <option value="volvo">Referee</option>
+      <option value="saab">Manager</option>
+      <option value="fiat">Admin</option>
+    </select>
+    <input id="addNewUser" type="submit" value="Add User"><br>
+
+    <div id="row" style="text-align: center; cursor: pointer; margin-bottom; 40px;">View All Managers</div>
+    <div id="row" style="text-align: center; cursor: pointer;">View All Referees</div><br>
+  </div>
 
   <div style="background-color: #00754F; color: white; padding: 2px; padding-top: 23px; padding-bottom: -20px;" data-role="header">
 		<p id="footerText" style="font-size: 12px; line-height: 0; float: left"></p>

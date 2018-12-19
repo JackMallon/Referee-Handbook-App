@@ -1,3 +1,6 @@
+$( ".wrong-creds" ).hide();
+var toggle = 0;
+
 $("#submit").click(function() {
   var username = $("#username").val();
   var password = $("#password").val();
@@ -14,10 +17,24 @@ $("#submit").click(function() {
         window.location="#referee";
         break;
       default:
-        alert(data);
+        if(toggle == 0){
+          $(".wrong-creds").slideToggle( "slow");
+          toggle++;
+        }
     }
   });
 });
+
+$("#addNewUser").click(function() {
+  var username = $("#username").val();
+  var password = $("#password").val();
+  console.log("data");
+
+  var selectedCountry = $(this).children("option:selected").val();
+  alert("You have selected the country - " + selectedCountry);
+
+});
+
 
 
 /*

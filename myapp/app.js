@@ -44,12 +44,11 @@ app.post('/login',function(req,res){
     if (err) throw err
     for(var i=0; i< rows.length; i++){
       var user = rows[i];
-      if(user.password != password){
-        res.send("Username or password incorrect!");
-      } else {
+      if(user.password == password){
         res.send({role: user.role});
       }
     }
+    res.end("Wrong username of password")
   });
 });
 
