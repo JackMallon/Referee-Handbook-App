@@ -41,7 +41,7 @@ app.post('/login',function(req,res){
   console.log(username);
   console.log(password);
 
-  /*var passSql = 'SELECT * from users WHERE username = ' + mysql.escape(username);
+  var passSql = 'SELECT * from users WHERE username = ' + mysql.escape(username);
 
   connection.query(passSql, function (err, rows, fields, verPwd) {
     if (err) throw err
@@ -53,7 +53,7 @@ app.post('/login',function(req,res){
         res.send({role: user.role});
       }
     }
-  });*/
+  });
 });
 
 /*
