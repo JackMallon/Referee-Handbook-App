@@ -38,9 +38,6 @@ app.post('/login',function(req,res){
   var username = req.body.username;
   var password = req.body.password;
 
-  console.log(username);
-  console.log(password);
-
   var passSql = 'SELECT * from users WHERE username = ' + mysql.escape(username);
 
   connection.query(passSql, function (err, rows, fields, verPwd) {
