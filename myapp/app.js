@@ -38,7 +38,10 @@ app.post('/login',function(req,res){
   var username = req.body.username;
   var password = req.body.password;
 
-  var passSql = 'SELECT * from users WHERE username = ' + mysql.escape(username);
+  console.log(username);
+  console.log(password);
+
+  /*var passSql = 'SELECT * from users WHERE username = ' + mysql.escape(username);
 
   connection.query(passSql, function (err, rows, fields, verPwd) {
     if (err) throw err
@@ -50,7 +53,7 @@ app.post('/login',function(req,res){
         res.send({role: user.role});
       }
     }
-  });
+  });*/
 });
 
 /*
