@@ -47,69 +47,8 @@
 		<div role="center" class="ui-content" style="text-align: center">
 			<img src="images/kreme.png" style="width: 150px;" id="logo">
 		</div>
-    <div id="statContainer">
-      <p style="text-align: center;"><strong>Orders:</strong></p>
-  		<div id="row"><p id="statLabel">Number of Orders:</p><div id="statCont"><p id="numOrders">0</p></div><span id="clear"></span></div>
-      <div id="row"><p id="statLabel">Total Sales:</p><div id="statCont"><p id="totalSales">0</p></div><span id="clear"></span></div>
 
-      <p style="text-align: center;"><strong>Donuts:</strong></p>
-      <div id="row"><p id="statLabel">Total:</p><div id="statCont"><p id="totalDonuts">0</p></div><span id="clear"></span></div>
-      <div id="row"><p id="statLabel">Original Glazed:</p><div id="statCont"><p id="orgDonut">0</p></div><span id="clear"></span></div>
-      <div id="row"><p id="statLabel">Chocolate Iced Glazed with Sprinkles:</p><div id="statCont"><p id="chocSprnkDonut">0</p></div><span id="clear"></span></div>
-      <div id="row"><p id="statLabel">Oreo Cookies and Kreme:</p><div id="statCont"><p id="oreoDonut">0</p></div><span id="clear"></span></div>
-      <div id="row"><p id="statLabel">Chocolate Iced Glazed:</p><div id="statCont"><p id="chocDonut">0</p></div><span id="clear"></span></div>
-      <div id="row"><p id="statLabel">Glazed with Kreme Filling:</p><div id="statCont"><p id="krmDonut">0</p></div><span id="clear"></span></div>
-    </div>
-	</div>
 
-  <div style="background-color: #00754F; color: white; padding: 2px; padding-top: 23px; padding-bottom: -20px;" data-role="header">
-		<p id="footerText" style="font-size: 12px; line-height: 0; float: left"></p>
-    <p style="font-size: 12px; line-height: 0; float: right"><a href="#login" style="text-decoration: none; underline: none; color: white;">Log Out</a></p>
-    <span class="clear" style="clear: right; display: block;"></span>
-	</div>
-</div>
-
-<!-- #Sales -->
-<div data-role="page" id="sales" data-theme="a">
-	<div id="header" data-role="header">
-		<h1>Sales</h1>
-	</div>
-
-	<div role="main" class="ui-content">
-		<div role="center" class="ui-content" style="text-align: center">
-			<img src="images/kreme.png" style="width: 150px;" id="logo">
-		</div>
-
-    <p style="text-align: center;"><strong>Add to Shopping Basket:</strong></p>
-    <div class="container" id="donutAddContainer">
-      <div class="row" id="bootRow">
-        <div class="col-md-4 col-sm-6 col-6 col-md-offset-1" id="donutCol">
-          <img src="images/orig.jpg" id="donut">
-          <div id="row" class="basketOrigGlazed">Add the Original Glazed</div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-6" id="donutCol">
-          <img src="images/sprnk.png" id="donut">
-          <div id="row" class="basketChocSprnk">Add Chocolate Sprinkles</div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-6" id="donutCol">
-          <img src="images/cookies.jpg" id="donut">
-          <div id="row" class="basketCookie">Add Cookies and Kreme</div>
-        </div>
-        <div class="col-md-6 col-sm-6 col-6" id="donutCol">
-          <img src="images/chocg.jpg" id="donut">
-          <div id="row" class="basketChocIced">Add Choc Iced Glazed</div>
-        </div>
-        <div class="col-md-6 col-sm-6 col-6" id="donutCol">
-          <img src="images/kreme.jpg" id="donut">
-          <div id="row" class="basketKreme">Add Glazed Kreme Filling</div>
-        </div>
-      </div>
-
-      <div id="checkoutButton">
-        <p>Proceed to basket</p>
-      </div>
-
-    </div><br>
 
 	</div>
 
@@ -120,32 +59,7 @@
 	</div>
 </div>
 
-<!-- #Checkout -->
-<div data-role="page" id="checkout" data-theme="a">
-	<div id="header" data-role="header">
-		<h1>Checkout</h1>
-	</div>
-
-	<div role="main" class="ui-content">
-		<div role="center" class="ui-content" style="text-align: center">
-			<img src="images/kreme.png" style="width: 150px;" id="logo">
-		</div>
-    <div id="checkoutContainer">
-      <strong>Basket:</strong>
-    </div>
-    <div id="checkoutContainer">
-      <div id="confirmBasket" class="confirmBasket" style="background-color: #D40027; height: 40px; cursor: pointer; text-align: center;"><p id="statLabel" style="text-align: center;">Confirm Order</p></div>
-    </div>
-	</div>
-
-  <div style="background-color: #00754F; color: white; padding: 2px; padding-top: 23px; padding-bottom: -20px;" data-role="header">
-		<p id="footerText" style="font-size: 12px; line-height: 0; float: left"></p>
-    <p style="font-size: 12px; line-height: 0; float: right"><a href="#login" style="text-decoration: none; underline: none; color: white;">Log Out</a></p>
-    <span class="clear" style="clear: right; display: block;"></span>
-	</div>
-</div>
-
-<!-- #Spectator -->
+<!-- #spectator -->
 <div data-role="page" id="spectator" data-theme="a">
 	<div id="header" data-role="header">
 		<h1>Available Matches</h1>
@@ -155,12 +69,44 @@
 		<div role="center" class="ui-content" style="text-align: center">
 			<img src="images/kreme.png" style="width: 150px;" id="logo">
 		</div>
-    <div id="checkoutContainer">
-      <strong>Basket:</strong>
-    </div>
-    <div id="checkoutContainer">
-      <div id="confirmBasket" class="confirmBasket" style="background-color: #D40027; height: 40px; cursor: pointer; text-align: center;"><p id="statLabel" style="text-align: center;">Confirm Order</p></div>
-    </div>
+	</div>
+
+  <div style="background-color: #00754F; color: white; padding: 2px; padding-top: 23px; padding-bottom: -20px;" data-role="header">
+		<p id="footerText" style="font-size: 12px; line-height: 0; float: left"></p>
+    <p style="font-size: 12px; line-height: 0; float: right"><a href="#login" style="text-decoration: none; underline: none; color: white;">Log Out</a></p>
+    <span class="clear" style="clear: right; display: block;"></span>
+	</div>
+</div>
+
+<!-- #referee -->
+<div data-role="page" id="referee" data-theme="a">
+	<div id="header" data-role="header">
+		<h1>Referee</h1>
+	</div>
+
+	<div role="main" class="ui-content">
+		<div role="center" class="ui-content" style="text-align: center">
+			<img src="images/kreme.png" style="width: 150px;" id="logo">
+		</div>
+	</div>
+
+  <div style="background-color: #00754F; color: white; padding: 2px; padding-top: 23px; padding-bottom: -20px;" data-role="header">
+		<p id="footerText" style="font-size: 12px; line-height: 0; float: left"></p>
+    <p style="font-size: 12px; line-height: 0; float: right"><a href="#login" style="text-decoration: none; underline: none; color: white;">Log Out</a></p>
+    <span class="clear" style="clear: right; display: block;"></span>
+	</div>
+</div>
+
+<!-- #admin -->
+<div data-role="page" id="admin" data-theme="a">
+	<div id="header" data-role="header">
+		<h1>Admin</h1>
+	</div>
+
+	<div role="main" class="ui-content">
+		<div role="center" class="ui-content" style="text-align: center">
+			<img src="images/kreme.png" style="width: 150px;" id="logo">
+		</div>
 	</div>
 
   <div style="background-color: #00754F; color: white; padding: 2px; padding-top: 23px; padding-bottom: -20px;" data-role="header">
@@ -171,23 +117,6 @@
 </div>
 
 
-<!-- #cook -->
-<div data-role="page" id="cook" data-theme="a">
-	<div id="header" data-role="header">
-		<h1>Referee</h1>
-	</div>
-
-  <div role="main" class="ui-content">
-		<div role="center" class="ui-content" style="text-align: center">
-			<img src="images/kreme.png" style="width: 150px;" id="logo">
-		</div>
-
-	<div style="background-color: #00754F; color: white; padding: 2px; padding-top: 23px; padding-bottom: -20px;" data-role="header">
-		<p id="footerText" style="font-size: 12px; line-height: 0; float: left"></p>
-    <p style="font-size: 12px; line-height: 0; float: right"><a href="#login" style="text-decoration: none; underline: none; color: white;">Log Out</a></p>
-    <span class="clear" style="clear: right; display: block;"></span>
-	</div>
-</div>
 
 </body>
 <script src="javascripts/script.js"></script>

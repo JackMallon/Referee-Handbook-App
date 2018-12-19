@@ -1,3 +1,26 @@
+$("#submit").click(function() {
+  var username = $("#username").val();
+  var password = $("#password").val();
+  console.log("data");
+  $.post("/login", { username: username, password: password }).done(function(data){
+    switch(data.role) {
+      case 1:
+        window.location="#manager";
+        break;
+      case 2:
+        window.location="#admin";
+        break;
+      case 3:
+        window.location="#referee";
+        break;
+      default:
+        alert(data);
+    }
+  });
+});
+
+
+/*
 //On Page Load
 $( document ).ready(function() {
   getOrderData();
@@ -180,3 +203,4 @@ function getPrice(donutCode){
     console.log("DEFAULT");
   }
 }
+*/

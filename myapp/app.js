@@ -32,6 +32,27 @@ connection.connect(function(error) {
   console.log("WORKING!");
 });
 
+
+//Login
+app.post('/login',function(req,res){
+  var username = req.body.username;
+  var password = req.body.password;
+
+  var passSql = 'SELECT * from users WHERE username = ' + mysql.escape(username);
+
+  connection.query(passSql, function (err, rows, fields, verPwd) {
+    if (err) throw err
+    for(var i=0; i< rows.length; i++){
+      var user = rows[i];
+      if(user.password != password){
+        res.send("Username or password incorrect!");
+      } else {
+        res.send({role: user.role});
+      }
+    }
+  });
+});
+
 /*
 //Login post method
 app.post('/login',function(req,res){
