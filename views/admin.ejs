@@ -1,0 +1,120 @@
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="stylesheets/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<body>
+
+<!-- #admin home -->
+<div data-role="page" id="home" data-theme="a" onload="window.location.href = 'https://google.com'">
+	<div role="main" class="ui-content">
+    <div class="container">
+      <div class="header">
+        <img src="images/banner.jpg">
+
+        <div class="title">
+          <p>ADMIN</p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="first-content-box">
+          <a href="/admin#add-admin"><input id="submit" type="submit" value="Add new admin"></a>
+          <a href="/admin#add-manager"><input id="submit" type="submit" value="Add new manager"></a>
+          <a href="/admin#add-referee"><input id="submit" type="submit" value="Add new referee"></a>
+        </div>
+
+        <div class="logout-box">
+          <a href="/logout"><input id="submit" type="submit" value="Logout"></a>
+        </div>
+      </div>
+
+    </div>
+	</div>
+</div>
+
+<!-- #add admin -->
+<div data-role="page" id="add-admin" data-theme="a" onload="window.location.href = 'https://google.com'">
+	<div role="main" class="ui-content">
+    <div class="container">
+      <div class="header">
+        <img src="images/banner.jpg">
+
+        <div class="title">
+          <p>ADD<br>ADMIN</p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="first-content-box">
+          <br><br><br>
+        </div>
+      </div>
+
+    </div>
+	</div>
+</div>
+
+<!-- #add manager -->
+<div data-role="page" id="add-manager" data-theme="a" onload="window.location.href = 'https://google.com'">
+	<div role="main" class="ui-content">
+    <div class="container">
+      <div class="header">
+        <img src="images/banner.jpg">
+
+        <div class="title">
+          <p>ADD MANAGER</p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="first-content-box">
+          <form action="/createManager" data-ajax="false" method="post">
+
+            <p>Username</p>
+            <input type="text" name="username" id="username" class="middle no-focus-outline" required></input>
+            <p>Password</p>
+            <input type="password" name="password" id="password" class="middle" required></input>
+            <p>Team Name</p>
+            <input type="text" name="teamname" id="teamname" class="middle no-focus-outline" required></input>
+
+            <input id="submit" type="submit" value="Create">
+
+          </form>
+        </div>
+      </div>
+    </div>
+	</div>
+</div>
+
+<!-- #add referee -->
+<div data-role="page" id="add-referee" data-theme="a" onload="window.location.href = 'https://google.com'">
+	<div role="main" class="ui-content">
+    <div class="container">
+      <div class="header">
+        <img src="images/banner.jpg">
+
+        <div class="title">
+          <p>ADD REFEREE</p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="first-content-box">
+          <br><br><br>
+        </div>
+      </div>
+    </div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="stylesheets/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<body>
+
+<!-- #manager home -->
+<div data-role="page" id="home" data-theme="a">
+	<div role="main" class="ui-content">
+    <div class="container">
+      <div class="header">
+        <img src="images/banner.jpg">
+
+        <div class="title">
+          <p>MANAGER</p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="first-content-box">
+          <a href="/manager#add-team"><input id="submit" type="submit" value="Add new teamsheet"></a>
+        </div>
+
+        <div class="content-box">
+          <p>No upcoming matches</p>
+        </div>
+
+        <div class="content-box">
+          <p>No matches being played</p>
+        </div>
+
+        <div class="logout-box">
+          <a href="/logout"><input id="submit" type="submit" value="Logout"></a>
+        </div>
+      </div>
+    </div>
+	</div>
+</div>
+
+<!-- #add team -->
+<div data-role="page" id="add-team" data-theme="a" onload="window.location.href = 'https://google.com'">
+	<div role="main" class="ui-content">
+    <div class="container">
+      <div class="header">
+        <img src="images/banner.jpg">
+
+        <div class="title">
+          <p>ADD<br>TEAMSHEET</p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="first-content-box">
+
+          <form id="teamnameForm" data-ajax="false" method="post">
+            <p>Team name</p>
+            <input type="text" name="username" class="middle no-focus-outline"></input>
+          </form>
+
+
+          <form id="teamsheetForm" data-ajax="false" method="post">
+            <p style="margin-top: 1em;">Add players to teamsheet</p>
+            <ol>
+              <div class="player-number"><li></li></div>  <div class="player-name"><input type="text" name="username" class="middle no-focus-outline"></input></div>
+              <div class="player-number"><li></li></div>  <div class="player-name"><input type="text" name="username" class="middle no-focus-outline"></input></div>
+              <div class="player-number"><li></li></div>  <div class="player-name"><input type="text" name="username" class="middle no-focus-outline"></input></div>
+              <div class="player-number"><li></li></div>  <div class="player-name"><input type="text" name="username" class="middle no-focus-outline"></input></div>
+              <div class="player-number"><li></li></div>  <div class="player-name"><input type="text" name="username" class="middle no-focus-outline"></input></div>
+              <div class="player-number"><li></li></div>  <div class="player-name"><input type="text" name="username" class="middle no-focus-outline"></input></div>
+            </ol>
+          </form>
+          <input id="submitTeamsheet" type="submit" value="Submit teamsheet">
+          <input id="addMorePlayers" type="submit" value="Add more players">
+        </div>
+
+        <div class="logout-box">
+          <a href="manager"><input id="submit" type="submit" value="Back"></a>
+        </div>
+
+      </div>
+    </div>
+	</div>
+</div>
+
+<script src="javascripts/teamSheet.js"></script>
+
+</body>
+</html>

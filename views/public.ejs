@@ -1,0 +1,70 @@
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="stylesheets/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<body>
+
+<!-- #home -->
+<div data-role="page" id="login" data-theme="a">
+	<div role="main" class="ui-content">
+    <div class="container">
+      <div class="header">
+        <img src="images/banner.jpg">
+
+        <div class="title">
+          <p>LOG IN</p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="first-content-box">
+          <div role="form-container">
+            <h2><% req.flash('error') %></h2>
+            <form action="/login" data-ajax="false" method="post">
+              <p>Username</p>
+              <input type="text" name="username" id="username" class="middle no-focus-outline" required></input>
+
+              <p>Password</p>
+              <input type="password" name="password" id="password" class="middle" required></input>
+              <input id="submit" type="submit" value="Log in">
+            </form>
+            <a href="#spectate"><input id="submit" type="submit" value="Continue as spectator"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+	</div>
+</div>
+
+<!-- #home -->
+<div data-role="page" id="spectate" data-theme="a" onload="window.location.href = 'https://google.com'">
+	<div role="main" class="ui-content">
+    <div class="container">
+      <div class="header">
+        <img src="images/banner.jpg">
+
+        <div class="title">
+          <p>MATCHES</p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="first-content-box">
+          <br><br><br>
+        </div>
+      </div>
+    </div>
+	</div>
+</div>
+
+</body>
+</html>
