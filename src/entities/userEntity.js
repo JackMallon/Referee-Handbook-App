@@ -2,9 +2,7 @@ var express = require('express');
 var router = express.Router();
 var security = require('../services/security.js');
 var db = require('../db.js');
-var managerTeam = require('./managerTeamEntity');
-var team = require('./teamEntity');
-var mysql = require('mysql');
+  var mysql = require('mysql');
 var connection = db.getConnection();
 
 
@@ -16,9 +14,6 @@ router.post('/createManager', function(req, res, next) {
   connection.query(createSql, function (err, result) {
     if (err){
       return console.log(err);
-    }
-    else{
-      teamid = team.createNewTeam(req.body.teamname, result.insertId);
     }
   });
   res.redirect('/admin');

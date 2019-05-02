@@ -1,0 +1,45 @@
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="../stylesheets/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<body>
+
+  <!-- #yellow -->
+  <div data-role="page" id="yellow-card" data-theme="a">
+  	<div role="main" class="ui-content">
+      <div class="container">
+        <div class="header">
+          <img src="../../../images/banner.jpg">
+
+          <div class="title">
+            <p>Yellow card</p>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="content-box-container">
+            <div class="first-content-box" style="text-align: center;">
+              <p>Issue yellow card</p>
+              <% players.forEach(function(player){ %>
+                <form id="yellow" data-ajax="false" method="post" action="<%= player.id %>">
+                  <input id="submit" type="submit" value="<%= player.playerName %>">
+                </form>
+              <% })%>
+            </div>
+          </div>
+        </div>
+      </div>
+  	</div>
+  </div>
+
+  </body>
+  </html>

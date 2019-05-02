@@ -17,26 +17,101 @@
 <div data-role="page" id="manager" data-theme="a" onload="window.location.href = 'https://google.com'">
 	<div role="main" class="ui-content">
     <div class="container">
-      <div class="header">
-        <img src="images/banner.jpg">
+      <div class="content-box-container">
+        <div class="header">
+          <img src="images/banner.jpg">
 
-        <div class="title">
-          <p>REFEREE</p>
-        </div>
-      </div>
-
-      <div class="content">
-        <div class="first-content-box">
-          <a href="/referee#add-team"><input id="submit" type="submit" value="Start match"></a>
+          <div class="title">
+            <p>REFEREE</p>
+          </div>
         </div>
 
-        <div class="logout-box">
-          <a href="/logout"><input id="submit" type="submit" value="Logout"></a>
+        <div class="content">
+          <div class="first-content-box">
+            <a href="/referee#start-match"><input id="submit" type="submit" value="Start match"></a>
+          </div>
+
+          <div class="logout-box">
+            <a href="/logout"><input id="submit" type="submit" value="Logout"></a>
+          </div>
         </div>
       </div>
     </div>
 	</div>
 </div>
+
+<!-- #home -->
+<div data-role="page" id="start-match" data-theme="a" onload="window.location.href = 'https://google.com'">
+	<div role="main" class="ui-content">
+    <div class="container">
+      <div class="content-box-container">
+        <div class="header">
+          <img src="images/banner.jpg">
+
+          <div class="title">
+            <p>START<br>MATCH</p>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="first-content-box" style="text-align: center;">
+            <p>Pick two teams</p>
+
+            <form action="/createMatch" method="post">
+              <select id="team1">
+                <option selected disabled>Pick Team 1</option>
+                <% data.forEach(function(data){ %>
+                  <option value="<%= data.id %>"><%= data.teamName %></option>
+                <% })%>
+              </select>
+              <select id="team2">
+                <option selected disabled>Pick Team 2</option>
+                <% data.forEach(function(data){ %>
+                  <option value="<%= data.id %>"><%= data.teamName %></option>
+                <% })%>
+              </select>
+            </form>
+            <input id="createTeam" type="submit" value="Submit">
+          </div>
+
+          <div class="logout-box">
+            <a href="/logout"><input id="submit" type="submit" value="Logout"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+	</div>
+</div>
+
+<!-- #home -->
+<div data-role="page" id="thematch" data-theme="a" onload="window.location.href = 'https://google.com'">
+	<div role="main" class="ui-content">
+    <div class="container">
+      <div class="content-box-container">
+        <div class="header">
+          <img src="images/banner.jpg">
+
+          <div class="title">
+            <p>START<br>MATCH</p>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="first-content-box" style="text-align: center;">
+            <br><br><br>
+          </div>
+
+          <div class="logout-box">
+            <a href="/logout"><input id="submit" type="submit" value="Logout"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+	</div>
+</div>
+
+
+<script src="javascripts/createTeam.js"></script>
 
 </body>
 </html>

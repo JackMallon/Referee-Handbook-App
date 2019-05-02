@@ -6,9 +6,6 @@ var security = require('../services/security.js');
 router.get('/', function(req, res, next) {
   security.access(req, res, "ROLE_ADMIN");
   res.render('admin');
-
-  
-
 });
 
 module.exports = router;

@@ -26,14 +26,16 @@
       </div>
 
       <div class="content">
-        <div class="first-content-box">
-          <a href="/admin#add-admin"><input id="submit" type="submit" value="Add new admin"></a>
-          <a href="/admin#add-manager"><input id="submit" type="submit" value="Add new manager"></a>
-          <a href="/admin#add-referee"><input id="submit" type="submit" value="Add new referee"></a>
-        </div>
+        <div class="content-box-container">
+          <div class="first-content-box">
+            <a href="/admin#add-admin"><input id="submit" type="submit" value="Add new admin"></a>
+            <a href="/admin#add-manager"><input id="submit" type="submit" value="Add new manager"></a>
+            <a href="/admin#add-referee"><input id="submit" type="submit" value="Add new referee"></a>
+          </div>
 
-        <div class="logout-box">
-          <a href="/logout"><input id="submit" type="submit" value="Logout"></a>
+          <div class="logout-box">
+            <a href="/logout"><input id="submit" type="submit" value="Logout"></a>
+          </div>
         </div>
       </div>
 
@@ -54,11 +56,21 @@
       </div>
 
       <div class="content">
-        <div class="first-content-box">
-          <br><br><br>
+        <div class="content-box-container">
+          <div class="first-content-box">
+            <form action="/createAdmin" data-ajax="false" method="post">
+
+              <p>Username</p>
+              <input type="text" name="username" class="middle no-focus-outline" required></input>
+              <p>Password</p>
+              <input type="password" name="password" class="middle" required></input>
+
+              <input type="submit" value="Create">
+
+            </form>
+          </div>
         </div>
       </div>
-
     </div>
 	</div>
 </div>
@@ -76,19 +88,21 @@
       </div>
 
       <div class="content">
-        <div class="first-content-box">
-          <form action="/createManager" data-ajax="false" method="post">
+        <div class="content-box-container">
 
-            <p>Username</p>
-            <input type="text" name="username" id="username" class="middle no-focus-outline" required></input>
-            <p>Password</p>
-            <input type="password" name="password" id="password" class="middle" required></input>
-            <p>Team Name</p>
-            <input type="text" name="teamname" id="teamname" class="middle no-focus-outline" required></input>
+          <div class="first-content-box">
+            <form action="/createManager" data-ajax="false" method="post">
 
-            <input id="submit" type="submit" value="Create">
+              <p>Username</p>
+              <input type="text" name="username" id="username" class="middle no-focus-outline" required></input>
+              <p>Password</p>
+              <input type="password" name="password" id="password" class="middle" required></input>
 
-          </form>
+              <input type="submit" value="Create">
+
+            </form>
+          </div>
+
         </div>
       </div>
     </div>
@@ -108,8 +122,22 @@
       </div>
 
       <div class="content">
-        <div class="first-content-box">
-          <br><br><br>
+        <div class="content-box-container">
+
+          <div class="first-content-box">
+            <form action="/createReferee" data-ajax="false" method="post">
+
+              <p>Username</p>
+              <input type="text" name="username" class="middle no-focus-outline" required></input>
+              <p>Password</p>
+              <input type="password" name="password"  class="middle" required></input>
+
+              <input type="submit" value="Create">
+
+            </form>
+
+          </div>
+
         </div>
       </div>
     </div>

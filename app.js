@@ -18,6 +18,8 @@ var refereeRouter = require('./src/routes/referee');
 // entities
 var userEntity = require('./src/entities/userEntity');
 var teamSheetEntity = require('./src/entities/teamSheetEntity');
+var matchEntity = require('./src/entities/matchEntity');
+var matchEventEntity = require('./src/entities/matchEventEntity');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -49,6 +51,8 @@ app.use('/referee', refereeRouter);
 // use my entities
 app.use('/', userEntity);
 app.use('/', teamSheetEntity);
+app.use('/', matchEntity);
+app.use('/', matchEventEntity);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -322,7 +322,7 @@ input {
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 1em;
-  padding-top: 1.8em;
+  padding-top: 1.2em;
   text-align: center;
 }
 
@@ -341,9 +341,16 @@ input {
 .content {
   position: absolute;
   z-index: 10;
-  margin-top: -2.5em;
   width: 100%;
   background-color: #09272E;
+}
+
+.content h5 {
+  float: right;
+}
+
+.content-box-container {
+  margin-top: -2.5em;
 }
 
 .container img {
@@ -374,4 +381,18 @@ input {
 
 .ui-page, .ui-page-theme-a, .ui-page-active {
   background-color: #09272E;
+}
+
+.half-card {
+  width: 50%;
+  text-align: center;
+  float:left;
+}
+
+.invisible p{
+  visibility: none;
+}
+
+.title {
+  width: 100%;
 }

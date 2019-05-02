@@ -26,20 +26,28 @@
       </div>
 
       <div class="content">
-        <div class="first-content-box">
-          <a href="/manager#add-team"><input id="submit" type="submit" value="Add new teamsheet"></a>
-        </div>
+        <div class="content-box-container">
+          <div class="first-content-box">
+            <a href="/manager#add-team"><input id="submit" type="submit" value="Add new teamsheet"></a>
+          </div>
 
-        <div class="content-box">
-          <p>No upcoming matches</p>
-        </div>
+          <div class="content-box">
+            <strong><p>Matches being played</p></strong>
+            <hr>
+            CastleknockFC U18s<br>vs<br>CorduffFC U18s<br>
+            <a href="/manager#add-team"><input id="submit" type="submit" value="Live updates"></a>
+          </div>
 
-        <div class="content-box">
-          <p>No matches being played</p>
-        </div>
+          <div class="content-box">
+            <strong><p>Submitted teamsheets</p></strong>
+            <hr>
+            <p>CastleknockFC U18s</p>
+            <p>CastleknockFC U15s</p>
+          </div>
 
-        <div class="logout-box">
-          <a href="/logout"><input id="submit" type="submit" value="Logout"></a>
+          <div class="logout-box">
+            <a href="/logout"><input id="submit" type="submit" value="Logout"></a>
+          </div>
         </div>
       </div>
     </div>
@@ -59,33 +67,34 @@
       </div>
 
       <div class="content">
-        <div class="first-content-box">
+        <div class="content-box-container">
+          <div class="first-content-box">
 
-          <form id="teamnameForm" data-ajax="false" method="post">
-            <p>Team name</p>
-            <input type="text" name="username" class="middle no-focus-outline"></input>
-          </form>
+            <form id="teamnameForm" data-ajax="false" method="post">
+              <p>Team name</p>
+              <input type="text" name="username" class="middle no-focus-outline"></input>
+            </form>
 
 
-          <form id="teamsheetForm" data-ajax="false" method="post">
-            <p style="margin-top: 1em;">Add players to teamsheet</p>
-            <ol>
-              <div class="player-number"><li></li></div>  <div class="player-name"><input type="text" name="username" class="middle no-focus-outline"></input></div>
-              <div class="player-number"><li></li></div>  <div class="player-name"><input type="text" name="username" class="middle no-focus-outline"></input></div>
-              <div class="player-number"><li></li></div>  <div class="player-name"><input type="text" name="username" class="middle no-focus-outline"></input></div>
-              <div class="player-number"><li></li></div>  <div class="player-name"><input type="text" name="username" class="middle no-focus-outline"></input></div>
-              <div class="player-number"><li></li></div>  <div class="player-name"><input type="text" name="username" class="middle no-focus-outline"></input></div>
-              <div class="player-number"><li></li></div>  <div class="player-name"><input type="text" name="username" class="middle no-focus-outline"></input></div>
-            </ol>
-          </form>
-          <input id="submitTeamsheet" type="submit" value="Submit teamsheet">
-          <input id="addMorePlayers" type="submit" value="Add more players">
+            <form id="teamsheetForm" data-ajax="false" method="post">
+              <p style="margin-top: 1em;">Add players to teamsheet</p>
+              <ol>
+                <div class="player-number"><li></li></div>  <div class="player-name"><input type="text" name="username" class="middle no-focus-outline"></input></div>
+                <div class="player-number"><li></li></div>  <div class="player-name"><input type="text" name="username" class="middle no-focus-outline"></input></div>
+                <div class="player-number"><li></li></div>  <div class="player-name"><input type="text" name="username" class="middle no-focus-outline"></input></div>
+                <div class="player-number"><li></li></div>  <div class="player-name"><input type="text" name="username" class="middle no-focus-outline"></input></div>
+                <div class="player-number"><li></li></div>  <div class="player-name"><input type="text" name="username" class="middle no-focus-outline"></input></div>
+                <div class="player-number"><li></li></div>  <div class="player-name"><input type="text" name="username" class="middle no-focus-outline"></input></div>
+              </ol>
+            </form>
+            <input id="submitTeamsheet" type="submit" value="Submit teamsheet">
+            <input id="addMorePlayers" type="submit" value="Add more players">
+          </div>
+
+          <div class="logout-box">
+            <a href="manager"><input id="submit" type="submit" value="Back"></a>
+          </div>
         </div>
-
-        <div class="logout-box">
-          <a href="manager"><input id="submit" type="submit" value="Back"></a>
-        </div>
-
       </div>
     </div>
 	</div>
